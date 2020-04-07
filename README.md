@@ -1,6 +1,6 @@
 # MyFuncionario
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
+Projeto desenvolvido com as tecnologias Angular 8 e Portinari
 
 ## Development server
 
