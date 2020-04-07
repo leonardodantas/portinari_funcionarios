@@ -1,0 +1,15 @@
+<po-dynamic-form #dynamicForm
+  p-auto-focus="name"
+  [p-fields]="campos"
+  [p-value]="person"
+>
+</po-dynamic-form>
+
+<div class="po-row">
+    <po-button
+      class="po-md-3"
+      p-label="Save"
+      [p-disabled]="dynamicForm?.form.invalid"
+      (p-click)="inserirFuncionario(person);dynamicForm.form.reset()">
+    </po-button>
+  </div>

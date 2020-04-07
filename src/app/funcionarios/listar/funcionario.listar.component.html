@@ -1,0 +1,22 @@
+<h1>Funcionarios</h1>
+<h2> {{ qtdSelecionados}}</h2>
+<po-table
+  [p-actions]="actions"
+p-striped="true"
+  p-selectable="true"
+  p-container="border"
+  [p-columns]="colunas"
+  [p-sort]="true"
+  separator="true"
+  [p-loading]="carregarTabela"
+  (p-selected)="selecionarLinhas($event)"  
+  (p-unselected)="tirarLinhas($event)"
+  [p-items]="funcionarios">
+</po-table>
+
+<po-modal #modal
+  [p-primary-action]="deletar"
+  [p-secondary-action]="cancelar"
+  p-title="Deletar Funcionario">
+  Deseja mesmo deletar o(a) funcionario(a) 
+</po-modal>

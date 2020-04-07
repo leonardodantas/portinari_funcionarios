@@ -1,0 +1,19 @@
+<h1>Funções</h1>
+<po-table
+
+  p-container="border"
+  [p-columns]="colunas"
+  [p-sort]="true"
+  separator="true"
+  [p-loading]="carregarTabela"
+  (p-selected)="selecionarLinhas($event)"  
+  (p-unselected)="tirarLinhas($event)"
+  [p-items]="funcoes">
+</po-table>
+
+<po-modal #modal
+  [p-primary-action]="deletar"
+  [p-secondary-action]="cancelar"
+  p-title="Deletar Funcionario">
+  Deseja mesmo deletar o(a) funcionario(a) 
+</po-modal>

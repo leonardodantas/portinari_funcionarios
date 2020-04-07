@@ -1,0 +1,12 @@
+<po-dynamic-form #dynamicForm 
+[p-fields]="campos"
+[p-value]="value"
+>
+</po-dynamic-form>
+
+<po-button
+class="po-md-3"
+p-label="Inserir"
+[p-disabled]="dynamicForm?.form.invalid"
+(p-click)="inserirFuncao(); dynamicForm.form.reset()">
+</po-button>
